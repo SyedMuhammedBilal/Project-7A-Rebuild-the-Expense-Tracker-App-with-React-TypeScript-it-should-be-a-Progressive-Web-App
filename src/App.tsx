@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import './App.css';
 import Headers from './components/Headers'
 import Balance from './components/Balance';
