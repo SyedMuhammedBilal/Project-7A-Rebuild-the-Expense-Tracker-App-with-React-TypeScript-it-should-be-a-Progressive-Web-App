@@ -37,4 +37,4 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: deploying in surge
-      run: surge ./build http://expensetrackerty.surge.sh/ --token ${{secrets.TOKEN}}
+      run: surge ./build https://expts.netlify.app/
