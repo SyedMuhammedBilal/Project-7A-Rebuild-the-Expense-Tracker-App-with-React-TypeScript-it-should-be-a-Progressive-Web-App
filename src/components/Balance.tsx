@@ -7,9 +7,9 @@ export const Balance = () => {
     const balance = transactionAmounts.reduce((a, b) => (a + b), 0);
 
     return (
-        <div className="balance">
+        <div className="balance" >
             <h4>Balance:</h4>
-            <h1>${balance}</h1>
+            <h1 data-testid="blnc">${balance}</h1>
         </div>
     )
 }

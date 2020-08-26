@@ -2,7 +2,7 @@ import React from 'react';
 
 function Headers() {
     return(
-        <div style={{ fontSize: '20px' }}>
+        <div data-testid="heading" style={{ fontSize: '20px' }}>
             Expense Tracker
         </div>
     )

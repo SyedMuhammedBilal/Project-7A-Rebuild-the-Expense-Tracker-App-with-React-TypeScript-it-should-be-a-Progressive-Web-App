@@ -9,7 +9,7 @@ import { GlobalContext } from '../context/GlobalState'
     return (
         <div>
             <h3>History</h3>
-            <ul className="list">
+            <ul data-testid="list" className="list">
             {transactions.map(transaction => (<Transaction key={transaction.id}
             id={transaction.id}
             title={transaction.title}

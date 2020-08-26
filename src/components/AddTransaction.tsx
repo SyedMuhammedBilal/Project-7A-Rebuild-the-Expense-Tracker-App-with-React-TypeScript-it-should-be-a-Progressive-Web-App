@@ -19,10 +19,15 @@ const AddTransaction = () => {
   return (
         <>
             <h3>Add new transaction</h3>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} data-testid="transaction-form">
                 <div className="form-control">
                     <label htmlFor="text">Text</label>
-                    <input type="text" value={title} onChange={e => setTitle(e.target.value)} placeholder="Enter text..." />
+                  <input
+                      type="text"
+                      value={title}
+                      data-testid="name"
+                      onChange={e => setTitle(e.target.value)}
+                      placeholder="Enter text..." />
                 </div>
                 <div className="form-control">
                     <label htmlFor="amount">
@@ -33,6 +38,7 @@ const AddTransaction = () => {
                         type="number"
                         value={amount}
                         onChange={e => setAmount(Number(e.target.value))}
+                        data-testid="amount"
                         placeholder="Enter amount..."
                     />
                 </div>
